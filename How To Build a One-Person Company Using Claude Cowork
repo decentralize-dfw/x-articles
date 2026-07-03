@@ -1,0 +1,425 @@
+Emails. Formatting. Compiling reports. Preparing decks. Organizing files. Researching. Marketing. Writing. SEO.
+The average knowledge worker spends 60% of their day on above work that doesn't require their brain.
+Necessary. But not the work only you can do.
+Claude Cowork changes this.
+Not by making you faster at those tasks.
+By removing you from them entirely.
+Here is the exact system I use to run a one-person company where Cowork handles the production and I handle the decisions.
+Save this. You will use it every week.
+What Cowork actually is
+Most people think Claude is a chatbot.
+You open it. You type. It responds. You copy the text somewhere. You close the tab.
+That is Claude Chat. It's fine. It's not Cowork.
+Claude Cowork is a different product entirely.
+It lives on your desktop. It reads and writes files on your actual computer. It creates real Word documents and Excel files. It runs multi-step tasks while you do something else. It asks you questions before it starts — instead of guessing and getting it wrong.
+The mindset shift:
+Claude Chat is a conversation. Cowork is a coworker.
+One gives you text to paste somewhere. The other does the job and saves the file where it belongs.
+How to get started in 5 minutes
+Before anything else — install.
+→ Go to claude.com/download 
+→ Download the desktop app (Mac or Windows) 
+→ You need a paid plan — $20/month minimum. I use the $100/month plan :) 
+→ Open the app 
+→ Click the "Cowork" tab at the top (between Chat and Code) 
+→ Select a folder from your computer 
+→ Switch to Opus 4.6 for complex tasks
+That folder is everything.
+Cowork reads it. Writes to it. Organizes inside it.
+The better your folder — the better your output.
+Step 1 — Build the folder
+Most people open Cowork, type a prompt, and get generic output.
+The reason: Cowork doesn't know who you are.
+Fix this once. Never fix it again.
+Create a folder called "Claude Cowork" on your computer.
+Inside it, 3 subfolders:
+→ ABOUT ME 
+→ OUTPUTS 
+→ TEMPLATES
+3 files that change everything
+ABOUT ME folder is the most important thing you will ever set up in Cowork.
+These files get read at the start of every single session.
+They mean you never explain yourself again.
+File 1 — about-me.md
+Who you are. How you think. What good work looks like for you.
+Don't write this yourself.
+Let Cowork interview you.
+Open a new Cowork session and paste this:
+plaintext
+You are building my about-me.md file for my Cowork folder.
+
+Interview me using AskUserQuestion — one question at a time.
+20 questions total. Push back on vague answers.
+
+Cover:
+- What I do and who I work with
+- How I start a task and what "done" looks like
+- What great work looks like in my field
+- What I hate (patterns, shortcuts, AI clichés)
+- My hard rules and non-negotiables
+
+After the interview: compile everything into a single
+markdown file under 2,000 tokens.
+
+No raw Q&A transcripts. Extract the patterns.
+Write as condensed prose and bullet points.
+
+Save as about-me.md in my ABOUT ME/ folder.
+Answer the questions by talking, not typing.
+Use Wispr Flow (or any other free voice dictation tool, even Apple Mac has it by default). Hold a key. Talk. Release. Words appear.
+Speaking gives 3x more context than typing. Better context = better Cowork output. Every time.
+Keep the file under 2,000 tokens.
+I learned this the hard way. My original about-me file was 22,000+ tokens. Cowork was spending most of each session just reading my profile — not doing actual work.
+Trimmed it to under 2,000. Same quality. 10x less waste.
+File 2 — anti-ai-writing-style.md
+You hate AI writing. I hate AI writing.
+Delve. Harness. Tapestry. In today's fast-paced world.
+This file is a list of everything Cowork must never do when it writes for you.
+Mine bans 80+ words. Kills specific sentence patterns. Limits paragraphs to 3 lines.
+Without this file: Cowork writes like AI. With this file: Cowork writes like you.
+Start simple. Add to it every time you see something you hate in Cowork's output.
+File 3 — my-company.md
+Your goals. Your strategy. What you're focused on. What you're saying no to.
+Not your Tuesday deadline. Your north star.
+Paste this into the same Cowork session after your about-me interview:
+plaintext
+You are building my my-company.md file.
+
+This file tells Claude what I'm working toward
+so it makes better decisions on every task.
+
+Interview me using AskUserQuestion — 6-8 questions.
+
+Cover:
+- My top 2-3 goals this year (specific numbers)
+- What platforms and markets matter most right now
+- What I'm actively saying no to
+- Where I'm spending most of my time this quarter
+
+After the interview: compile into a single markdown file
+under 1,000 tokens. Bullet points. No filler.
+
+Save as my-company.md in my ABOUT ME/ folder.
+Update this file when your strategy actually changes.
+Maybe once a quarter.
+
+Step 2 — Set Global Instructions
+Your folder alone is not enough.
+Cowork needs to know how to use it.
+Go to: Settings → Cowork → Edit Global Instructions
+Paste this (customize the file descriptions to match yours):
+plaintext
+Before every task, read every file in ABOUT ME/:
+- about-me.md: [your role, standards, how you work]
+- anti-ai-writing-style.md: [your writing rules, banned words]
+- my-company.md: [your goals, strategy, current focus]
+
+Never read OUTPUTS/ or TEMPLATES/ unless I point you to a specific file.
+
+Save all deliverables in OUTPUTS/ under a subfolder named after the project.
+
+If the brief is unclear, use AskUserQuestion.
+Don't fill gaps with filler.
+Don't over-explain.
+Deliver the work.
+You set this once.
+It runs before every single Cowork session.
+Forever.
+This is why you can write a 10-word prompt and get output that sounds like you wrote it.
+The context is already loaded.
+Step 3 — The one prompt that runs everything
+Stop writing long prompts.
+This is the only prompt you need:
+plaintext
+I want to [TASK] so that [SUCCESS CRITERIA].
+
+Read my ABOUT ME folder first.
+Then use AskUserQuestion to clarify before you start.
+That's it.
+Cowork reads your context files. Asks you the right questions. You click answers (takes 60 seconds). Cowork builds a plan. You approve. It creates the actual file in your OUTPUTS folder.
+The whole interaction feels like briefing a smart employee instead of wrestling with a prompt box.
+The feature nobody explains properly
+AskUserQuestion.
+This is the thing that changed how I work.
+Every other AI tool guesses when you're unclear.
+It picks an interpretation. Runs with it. Produces polished output that answers the wrong question.
+Cowork does something different.
+When it needs more information — it stops.
+It generates a form. Clickable options. Multi-select choices. Rankings you can drag and reorder.
+The AI is now prompting you.
+You are not wrestling with a text box trying to write the perfect prompt.
+You are clicking through a form in 60 seconds.
+Always add this line to any non-trivial prompt:
+plaintext
+Use AskUserQuestion before you start.
+I have a Mac text shortcut: I type "/prompt" and it expands to my full template automatically.
+Settings → Keyboard → Text Replacements → add /prompt → paste the full template.
+One keyboard shortcut. Always ready.
+Step 4 — Install Wispr Flow
+This is the bottleneck nobody talks about.
+Cowork can read 100,000 words in 15 seconds. It can build a spreadsheet in 90 seconds.
+Then it waits for you to type at 60 words per minute.
+You speak at 150 words per minute.
+Install Wispr Flow.
+→ wispr.ai (or any free STT) → Download → Install 
+→ Choose a keyboard shortcut (I use Shift) 
+→ Hold the key. Talk. Release. Words appear anywhere on your screen.
+Including inside Cowork's chat box.
+Now instead of typing "I need a LinkedIn post," you say:
+"I recently found out about X and I want to share more about Y but first I want to make sure Z is clear so maybe we should start with..."
+Spoken context is 3x richer than typed context.
+Better context = better output.
+Every time.
+Step 5 — Save tokens. Save money.
+The $20/month plan runs out fast if you use Cowork daily.
+Here is how to make every credit count.
+The biggest hack: restart the conversation.
+Every follow-up message costs more than the last.
+Message 1 costs 1 token of context re-reading. Message 30 costs 31x that.
+At 500 tokens per exchange — 20 messages burns 105K tokens.
+When Cowork gets something wrong — don't type "no, I meant..."
+Restart the conversation from a higher point. Start fresh with a better brief.
+That single habit cuts your token usage by 40-60%.
+5 more rules:
+→ Batch your tasks. 3 separate prompts = 3 context reloads. 1 prompt with 3 tasks = 1 reload.
+→ Use Sonnet for simple tasks. Grammar checks, formatting, quick answers. Save Opus for deep work. Sonnet costs 5x less.
+→ Keep ABOUT ME files small. Every session starts by reading these. 22,000 tokens → burns budget before any real work. 2,000 tokens → efficient.
+→ Start fresh every 20 messages. Ask Cowork to summarize the session. Copy it. New session. Paste summary as first message. Same context. No bloat.
+→ Spread sessions across the day. Claude uses a rolling 5-hour usage window. One morning sprint burns your daily limit. Morning + afternoon + evening = 3x the capacity.
+
+Step 6 — The Templates folder
+Every time Cowork builds something you like — save it as a template.
+Just say this at the end of your session:
+plaintext
+Save this as a template in TEMPLATES/.
+Strip the content. Keep the structure.
+Cowork strips the actual content, keeps the skeleton — sections, order, format, length — and saves it.
+Next time you need something similar:
+plaintext
+Use the template in TEMPLATES/[filename].
+The TEMPLATES folder fills itself.
+You don't organize it. You don't maintain it.
+You just point to files when you need them.
+Over time this folder becomes your most valuable asset.
+Every structure that worked. Every format that landed. Every output your clients loved.
+Instantly reusable.
+Step 7 — Build your AI employee
+This is where Cowork goes from tool to infrastructure.
+A Cowork plugin is a folder with a specific structure that turns Claude into a specialist.
+Not a generalist who can do anything.
+A specialist who does one thing exactly the way you do it.
+Your content strategist. Your research analyst. Your client report writer.
+The folder structure:
+plaintext
+my-plugin/
+├── .claude-plugin/
+│   └── plugin.json        ← Name and role
+├── skills/
+│   └── SKILL.md           ← Step-by-step workflow
+├── commands/
+│   └── run.md             ← /slash commands
+├── references/
+│   └── templates.md       ← Your best examples
+└── global-instructions.md ← Standing orders
+The SKILL.md is the brain.
+Every step. Every rule. Every quality check.
+The more specific you write it — the better the output.
+Not "analyze the data."
+"Compare this week to last week. Calculate percentage change for each metric. Flag anything above 20% variance. Write the insight in one sentence."
+Example plugin: a weekly content writer
+markdown
+# SKILL.md
+
+## Process
+1. Read about-me.md to load voice and audience
+2. Read anti-ai-writing-style.md — never break these rules
+3. Read the content brief from INPUTS/
+4. Research the topic using web search (3 sources minimum)
+5. Write a hook using the 3-second scroll-stop test
+6. Write the body in sections under 100 words each
+7. End with a specific CTA tied to my current goal in my-company.md
+8. Run quality checklist before saving
+
+## Rules
+- Never use bullet points unless I ask
+- Every paragraph max 3 lines
+- No AI words (see anti-ai-writing-style.md)
+- Hook must make a bold claim in the first line
+
+## Quality Checklist
+- [ ] Hook stops the scroll in 3 seconds
+- [ ] No banned words or patterns
+- [ ] CTA matches current goal
+- [ ] Reads like a human wrote it
+Once built — trigger it with:
+plaintext
+/content:write
+One command. Full specialist workflow. Saved to your OUTPUTS folder.
+Step 8 — Automate your full day
+This is the endgame.
+3 scheduled sessions. No manual triggering. Your day runs itself.
+7 AM — Morning briefing
+Before you open your laptop with full intention:
+Cowork has already scanned your email and categorized by urgency. Drafted responses for routine messages. Flagged the 3 that actually need your brain. Pulled your calendar. Created prep notes for every meeting.
+One document sitting on your desktop.
+You read it in 5 minutes. You know exactly what your day looks like.
+Use /schedule in Cowork to set this up as a recurring task.
+12 PM — Midday production
+Triggered manually when you're ready to get real work done.
+You brief Cowork on your 3-5 tasks for the afternoon.
+Cowork executes them while you focus on the decisions and relationships that only you can handle.
+You come back to finished files.
+5 PM — End of day wrap-up
+Before you close your laptop:
+Cowork reviews what happened. What was handled. What's pending. What carries to tomorrow.
+One document that closes the loop.
+Which becomes context for tomorrow morning's briefing.
+Continuous loop. Zero gaps.
+plaintext
+/schedule: Every weekday at 7 AM
+Read my email (Gmail connector), calendar (Google Calendar connector),
+and Slack (Slack connector).
+
+Categorize emails:
+- Tier 1: Must respond before 9 AM
+- Tier 2: Must respond today
+- Tier 3: Can wait this week
+- Tier 4: Informational, no reply needed
+
+Draft responses for all Tier 3 and Tier 4 emails.
+Flag Tier 1 and Tier 2 for my review.
+
+Pull today's calendar. Write 3-sentence prep notes for each meeting.
+
+Compile everything into Morning-Briefing-[DATE].md
+Save to /OUTPUTS/daily-briefings/
+Set it. Never think about it again.
+Some more things you can do, to improve your everyday 
+Plugins
+What they are (in 10 words): Pre-built specialist packs that make Claude an expert instantly.
+Why they matter
+Without a plugin, Claude Cowork is a brilliant generalist. It can write, research, analyze, organize, and build. But it doesn’t know your industry’s terminology, your team’s workflow, or the specific outputs your role requires.
+Plugins change that. They’re bundles of skills, slash commands, and sub-agents designed for specific job functions. Anthropic shipped 11 official plugins in January 2026:
+Productivity — task management, calendars, and daily workflows
+Marketing — content drafting, campaign planning, brand voice
+Sales — account research, call prep, outreach, battlecards
+Finance — financial modeling, analysis, reporting
+Data Analysis — SQL, dashboards, dataset exploration
+Legal — contract review, research, drafting
+Product Management — specs, roadmaps, user stories
+Customer Support — ticket handling, response drafting
+Enterprise Search — search across your connected tools
+Biology Research — scientific literature and data
+And more being added
+The impact hit fast. When the Legal plugin launched, Thomson Reuters dropped 16% in a single trading session — its worst day on record. LegalZoom fell 20%. That’s what it looks like when AI starts genuinely doing specialized work.
+Install the Sales plugin and Claude can research accounts, prep you for calls, and draft outreach sequences. Install the Data plugin and it explores your dataset, writes SQL, builds dashboards, and flags anomalies. You don’t need to be technical. You just click install
+How to install plugins
+Open Claude Cowork.
+Click the “+” button in the chat bar, then click “Plugins” to browse the library.
+to see everything available.Or go toclaude.com/plugins
+Pick the plugin that fits your role and click Install.
+Type “/” in any Cowork chat to see the slash commands that plugin adds.
+Your first prompts (after installing)
+After installing the Productivity plugin:
+/productivity:start Let’s review what I need to get done today and set up my task list.
+After installing the Marketing plugin:
+/marketing:draft-content Write a LinkedIn post about [topic]. Match the voice from my brand-voice.md file. Target [audience]. Goal: [what I want people to do].
+After installing the Data plugin:
+/data:explore I’ve uploaded a CSV in this folder. Give me a summary of what’s in it, flag any anomalies, and suggest three analyses worth running.
+The output with a plugin active is noticeably more structured and opinionated than a generic prompt. It knows what a good output looks like for your function.
+Connectors
+What they are (in 10 words): Live integrations with Slack, Drive, Notion, and 50+ other tools.
+Why they matter
+The typical AI workflow involves a lot of copy-pasting. You screenshot your Slack thread. You copy the doc. You paste it into the chat. You add context manually. It’s exhausting.
+Connectors eliminate all of that. Link your tools once, and Claude can reference live data from them mid-conversation. No copy-pasting. No screenshots. No downloads.
+-alpha over the last two weeks” and it reads your Slack. Ask it to “pull the Q1 numbers from the revenue doc in Drive” and it opens your Google Doc. Ask it to “find everything tagged as a blocker in Notion” and it searches your workspace.Ask Cowork to “summarize the key decisions from#project
+This is free on all plans. It’s the most underused feature in Cowork, in my experience.
+How to connect your tools
+Go to Settings > Connectors in Claude Desktop.
+Browse the directory (50+ integrations including Slack, Google Drive, Notion, Figma, Asana, and more).
+Click a connector and hit “Add.”
+Authenticate with that tool. Done.
+You only do this once. After that, Claude can access live data from that tool in every Cowork session.
+Your first prompt (after connecting Slack)
+Search my Slack messages from the last 7 days and give me a summary of anything I need to follow up on. Organize by urgency.
+Or after connecting Google Drive:
+Find the most recent document about [project name] in my Drive. Read it and tell me the three most important things I need to know.
+Real use cases
+Here is exactly how I use Cowork every week.
+Writing this kind of article:
+Folder has: about-me.md, anti-ai-writing-style.md, past articles that performed well, reference docs.
+Prompt: "I want to write about [topic]. Read my folder. Ask me questions first."
+What happens: Cowork reads every file. Asks about audience, angle, what other guides missed. I click answers. It produces an outline. I push back. It adjusts. Writes the draft in my voice because it has my voice profile loaded.
+I edit. But the heavy lifting is done.
+Client deliverables:
+Drop the client brief in the folder next to my templates and past work.
+Prompt: "Read the brief in /projects/client-x. Compare to my template. Draft a first version as .docx. Ask me questions first."
+What happens: Cowork reads the brief. Compares to my format. Asks things I didn't think of. Creates the actual .docx. Ready to open.
+Competitive research:
+Drop 3-5 competitor articles into a subfolder.
+Prompt: "Read all 4 articles. Create a comparison table: what each covered, what they missed, where I can say something new."
+That used to be a junior hire job.
+Now it's a prompt.
+Weekly briefing that runs itself:
+Scheduled every Monday at 7 AM.
+Cowork researches whatever I'm tracking. Saves the summary to my briefings folder.
+I wake up to a document. I didn't do anything.
+Where Cowork falls short
+I promised honesty.
+→ No memory between sessions: Every session starts fresh. Fix: keep context in your ABOUT ME files. Set solid global instructions. This workaround works well but you will feel the gap on long projects.
+→ Eats your usage fast: Complex tasks burn credits quickly. On the $20 plan you'll feel it within a week of heavy use. Consider the $100 plan if Cowork becomes your main workflow.
+→ Desktop only: No mobile. No browser version. The app must stay open while tasks run. Close it — the session dies.
+→ Not for quick questions: Use Chat for "what's the capital of France." Cowork is for tasks, not trivia.
+→ Review before sending. Still a research preview. Anthropic says this explicitly. Don't send a client deliverable without reading it. Works great 90% of the time. The 10% can surprise you.
+Your first 20 minutes
+Open your calendar. Block 20 minutes this week.
+Minutes 0-5: Install and build the folder
+→ claude.com/download 
+→ Download → Sign in → Paid plan 
+→ Create Claude Cowork folder on your computer 
+→ Create 3 subfolders: ABOUT ME, OUTPUTS, TEMPLATES
+Minutes 5-12: Create your 3 core files
+→ Open Cowork 
+→ New session 
+→ Opus 4.6 
+→ Paste the about-me interview prompt from above 
+→ Use Wispr Flow to dictate your answers (download it now: wispr.ai) 
+→ Let Cowork build about-me.md from your answers 
+→ Quick: write your anti-ai words in a text file 
+→ save as anti-ai-writing-style.md 
+→ Paste the my-company prompt 
+→ answer 6-8 questions 
+→ save as my-company.md
+Minutes 12-14: Set Global Instructions
+→ Settings 
+→ Cowork 
+→ Edit Global Instructions 
+→ Paste the template from above 
+→ Customize the file descriptions → Save
+Minutes 14-18: Run your first real task
+→ Think of something you actually need for work this week 
+→ Type: "I want to [task]. Read my ABOUT ME folder first. Use AskUserQuestion before you start." 
+→ Click through the form 
+→ Watch Cowork create a real file in your OUTPUTS folder 
+→ Open the file. Read it. Edit it. Use it.
+Minutes 18-20: Set your Mac text shortcut
+→ Settings 
+→ Keyboard 
+→ Text Replacements 
+→ Add: /prompt 
+→ [your full template] 
+→ Test it. Type /prompt anywhere. The full template appears.
+You are now a Cowork user.
+Not the basic kind. The kind with context files, global instructions, and a system.
+What changes
+Before Cowork: you spend 60% of your day on production work.
+After Cowork: you spend 60% of your day on the decisions only you can make.
+Before: you write prompts and pray.
+After: you brief a system and review.
+Before: every client deliverable starts from scratch.
+After: your templates, voice, and standards are loaded before you type a word.
+Before: competitive research takes half a day.
+After: drop files in a folder, come back to a synthesis.
+The bottleneck stops being production.
+It becomes you. Your judgment. Your decisions. Your relationships.
+That is what a one-person company actually looks like.
