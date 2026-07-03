@@ -1,0 +1,108 @@
+This is a complete A–Z breakdown of how to run Claude Opus 4.8 and Kimi K2.7 together — using each one for exactly what it's best at, and paying a fraction of what you'd pay running Opus alone.
+Bookmark this before you forget.
+The Mistake Almost Everyone Makes
+You pick one model and route everything through it.
+If you picked Opus 4.8, you're paying $5 input / $25 output per million tokens for tasks a $0.95 model could handle just as well.
+
+If you picked Kimi, you're occasionally hitting tasks where you really do want the absolute frontier of reasoning quality — and you're not getting it.
+The smart play isn't picking one. It's routing.
+Some tasks are high-volume, mechanical, and token-heavy — they belong on Kimi K2.7. Some tasks are rare, high-stakes, and require the best reasoning available — they belong on Opus 4.8.
+Run both. Route by task. Pay 80% less for the same output quality.
+Here's the exact system.
+What Each Model Actually Is
+Kimi K2.7 Code — released June 12, 2026. Open-weight, 1-trillion-parameter MoE model (32B active, 384 experts), 256K context. Built specifically for long-horizon agentic coding.
+The key number: it uses roughly 30% fewer reasoning tokens than K2.6 while scoring higher on coding benchmarks. Moonshot reports +21.8% on Kimi Code Bench v2, +11.0% on Program Bench, +31.5% on MLS Bench Lite.
+Pricing: $0.95 input / $4.00 output per million tokens. Cached input drops to $0.19.
+Claude Opus 4.8 — Anthropic's most capable generally-available model before Fable 5. State-of-the-art reasoning, the gold standard for complex multi-step work where quality cannot be compromised.
+Pricing: $5 input / $25 output per million tokens.
+The price gap: Opus is roughly 5x more expensive on input, 6x more expensive on output.
+A note on the benchmarks: every K2.7 number so far is Moonshot's own proprietary benchmark. As of mid-June 2026, there are no independent third-party numbers on SWE-bench Verified, Terminal-Bench, or LiveCodeBench. Treat the scores as vendor-reported and directional. Test on your own code before trusting them.
+The Core Principle: Route by Task Type
+The entire workflow comes down to one decision made per task:
+Does this task require the absolute best reasoning available, or does it require lots of competent work done cheaply?
+If it's the first — Opus 4.8. If it's the second — Kimi K2.7.
+Most work is the second kind. That's why the savings are real.
+What Goes on Kimi K2.7
+These are the high-volume, token-heavy, mechanical tasks. K2.7's token efficiency and low price make it the obvious choice.
+Bulk code generation — boilerplate, CRUD endpoints, test scaffolding, repetitive components. K2.7 generates these competently at a fraction of the cost.
+Long-horizon refactoring — multi-file changes across a large codebase. K2.7 holds 256K context and stays coherent across long agentic runs.
+Test writing — generating comprehensive test suites. High token volume, mechanical, perfect for K2.7.
+Documentation — READMEs, API docs, inline comments. Necessary but not reasoning-intensive.
+DevOps and config — Docker files, CI pipelines, deployment scripts. K2.7's MCP tool-use scored 81.1 on MCP Mark Verified, so it handles tool-calling workflows well.
+First-pass anything — when you need a working draft fast and will refine later, K2.7 gives you 80% of the result for 20% of the cost.
+What Goes on Claude Opus 4.8
+These are the rare, high-stakes tasks where reasoning quality directly determines the outcome.
+Architecture decisions — when the choice you make now determines six months of technical debt, you want the best reasoning available.
+Complex debugging — the bug nobody can find, the race condition, the heisenbug. Opus 4.8's reasoning depth earns its price here.
+Security-critical code — auth flows, payment handling, anything where a subtle mistake is catastrophic.
+Final review — before you ship, run the critical path through Opus 4.8 to catch what K2.7 missed.
+Ambiguous requirements — when the task itself is unclear and the model needs to reason about what you actually want, not just execute.
+High-stakes writing — the investor email, the technical proposal, the thing that has to be right the first time.
+The Workflow, Step by Step
+Step 1 — Set Up Both Models
+Kimi K2.7:
+API at kimi.com/code/console
+Model ID: kimi-k2.7-code
+Or use Kimi Code CLI (terminal-first agent, plans from $19/month)
+Claude Opus 4.8:
+API model string: claude-opus-4-8
+Or Claude Code, or the Claude apps
+Set both up. You'll switch between them by task.
+Step 2 — Default to Kimi
+Make K2.7 your default. Every task starts here unless it clearly belongs to Opus.
+This single habit is where most of the savings come from. If 80% of your tasks run on a model that costs 1/5 as much, your bill drops accordingly.
+Step 3 — Escalate to Opus When It Matters
+Escalate to Opus 4.8 when you hit one of these signals:
+K2.7 gave you an answer and you're not confident it's right
+The task is architectural, not mechanical
+A mistake here would be expensive or hard to reverse
+The requirements are ambiguous and need real reasoning
+It's the final review before shipping
+Escalation is the exception, not the rule. But when you escalate, you get the best.
+Step 4 — Use Kimi to Prepare, Opus to Decide
+The most powerful pattern: use K2.7 to do the heavy lifting, then Opus to make the judgment call.
+Example: refactoring a large module.
+K2.7:
+plaintext
+Read this module. Generate three different refactoring approaches with full implementations for each.
+Opus 4.8: 
+plaintext
+Here are three refactoring approaches for the same module. Which one has the best long-term maintainability and why? What are the failure modes of each?
+K2.7 does the expensive token-heavy generation. Opus does the cheap-but-critical reasoning. You get frontier-quality decisions at a fraction of the cost.
+Step 5 — Final Review Always on Opus
+Before anything ships to production, run the critical path through Opus 4.8:
+plaintext
+Review this code for correctness, security, and edge cases.
+This is going to production. Be ruthless.
+Focus on: what breaks under load, what breaks with malicious input, 
+what breaks when a dependency fails.
+List every issue by severity.
+This single review catches what high-volume generation misses. It's the cheapest insurance you can buy.
+A Real Example: Building a Feature End to End
+Say you're building a payment integration. Here's how the two-model workflow runs:
+K2.7 — Generate the API client, the data models, the request/response handlers, the test scaffolding. High volume, mechanical, cheap.
+Opus 4.8 — Design the error-handling strategy for failed payments. This is where subtle reasoning matters — what happens on a timeout, a partial failure, a duplicate charge.
+K2.7 — Implement the error handling Opus designed. Write the tests for every failure mode.
+Opus 4.8 — Final security review of the payment path before it ships.
+Four steps. Two models. The expensive reasoning happens twice, on the two decisions that actually matter. Everything else runs cheap.
+The Cost Math
+Let's say a typical week of active development:
+The same week running everything on Opus 4.8:
+15M output tokens × $25/M = $375
+The same week running everything on K2.7:
+15M output tokens × $4/M = $60 — but with worse architecture decisions and weaker final reviews.
+The two-model split: $85. Frontier-quality decisions where it matters, cheap execution everywhere else.
+That's 77% cheaper than Opus-only, while keeping Opus-quality on the decisions that determine whether your code actually works.
+When to Break the Rule
+Two situations where you ignore the routing:
+Learning a new domain. When you don't yet know what's mechanical vs what's critical, run more through Opus until you build judgment. The savings come once you know your own work.
+Truly critical projects. If you're building something where any bug is catastrophic — medical, financial infrastructure, safety systems — the cost savings aren't worth the risk. Run more through Opus.
+The workflow optimizes for the common case: normal development where most tasks are routine and a few are critical.
+Conclusion
+The question was never "Kimi or Claude."
+It's "which model for which task."
+Kimi K2.7 for the high-volume mechanical work — bulk generation, refactoring, tests, docs. 30% more token-efficient than K2.6, a fraction of Opus pricing.
+Claude Opus 4.8 for the rare critical decisions — architecture, security, final review, ambiguous reasoning.
+Route by task. Default to cheap. Escalate when it matters.
+Same output quality on the things that determine success. 77% lower bill.
+That's the workflow.
